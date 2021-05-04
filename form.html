@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>しょうたのサイト</title>
+<body>
+<h1>入力フォーム</h1>
+<form action="index.html" method="post">
+ニックネーム：<input type="text" name="yourname">
+<label for="mail">メール：</label>
+<input id="mail" type="email" name="mail">
+<<label for="comment">コメント</label>
+<textarea id="comment" name="comment" placeholder="ここには自由にコメントを記入してください"></textarea>
+<select name="sushi">
+  <option value="minecraft">マイクラ</option>
+  <option value="amongus">アモングアス</option>
+  <option value="scratch">Scratch</option>
+</select>
+<p>性別を選択</p>
+<input id="male" type="radio" name="sex" value="male"><label for="male">男性</label>
+<input id="female" type="radio" name="sex" value="female"><label for="female">女性</label>
+<p>好きなスポーツ</p>
+<input id="football" type="checkbox" name="sport" value="サッカー"><label for="football">サッカー</label>
+<input id="baseball" type="checkbox" name="sport" value="野球"><label for="baseball">野球</label>
+<input id="basketball" type="checkbox" name="sport" value="バスケ"><label for="basketball">バスケ</label>
+<input type="reset" value="リセットする">
+<input type="submit" value="送信する">
+</form>
+</body>
+</html>
