@@ -1,1 +1,7 @@
 ErrorDocument 404 /404.html
+ErrorDocument 503 /503.html
+
+AuthType     Basic
+AuthName     "shouta0224"
+AuthUserFile [.htpasswdファイルの場所]
+require valid-user
