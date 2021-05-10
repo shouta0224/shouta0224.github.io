@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://totoraj930.github.io/10sec/ -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width">
+	<title>10秒で止めるやつ</title>
+	<!-- Color -->
+	<meta name="theme-color" content="#fff">
+	<!-- OGP -->
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:title" content="10秒で止めるやつ">
+	<meta property="og:site_name" content="10秒で止めるやつ">
+	<meta property="og:description" content="カウンターを10秒ピッタリで止めるゲーム">
+	<meta property="og:type" content="site">
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="10秒で止めるやつ">
+	<meta name="twitter:description" content="カウンターを10秒ピッタリで止めるゲーム">
+	<meta name="twitter:image" content="http://totoraj930.github.io/10sec/icon.png">
+	<!-- Other -->
+	<link rel="canonical" href="https://totoraj930.github.io/10sec/"><!-- url正規化 -->
+	<link rel="shortcut icon" href="https://totoraj930.github.io/10sec/favicon.ico"><!-- favicon -->
+	<link rel="apple-touch-icon" href="https://totoraj930.github.io/10sec/icon.png"><!-- icon -->
+	<link rel="stylesheet" href="./10s_files/main.css">
+	<script src="./10s_files/jquery.min.js.ダウンロード"></script>
+	<script src="./10s_files/main.js.ダウンロード"></script>
+</head>
+<body>
+	<section class="game wrap">
+		<h1 class="title">10秒で止めよう！</h1>
+		<div class="count-wrap">
+			<p id="count" class="count">0.00</p>
+		</div>
+		<div class="item-wrap">
+			<button id="button" class="button" data-status="start">スタート</button>
+		</div>
+		<div class="item-wrap">
+			<p id="rank" class="rank"></p>
+		</div>
+		<div class="item-wrap">
+			<a id="tweet" class="tweet" href="https://twitter.com/intent/tweet" style="display:none" target="_blank">結果をツイートする</a>
+		</div>
+		<a href="javascript:void(0)" class="about-open">説明</a>
+	</section>
+	<section class="about" style="display:none">
+		<div class="about-body">
+			<h1>説明</h1>
+			<p>
+				10秒でカウントを止めるゲームやで。別に他の遊び方をしても構わんよ。
+			</p>
+			<p>
+				(なんか0.00秒で止めるつわものもいるみたいやで。)
+			</p>
+			<h2>なんでつくったの</h2>
+			<p>
+				Twitterで話題になってた「<a href="http://shindan.matchalarm.com/ma_ten_sec" style="text-decoration: line-through;">10秒で止めろ！</a>(リンク切れ)」ってゲームのJavaScriptがひどくて環境によってカウントにズレが出る仕様だったので自作しました。
+			</p>
+			<p>
+				それなりに正確な計測ができているはずです。
+			</p>
+			<h2>ソースコード</h2>
+			<a href="https://github.com/totoraj930/10sec">https://github.com/totoraj930/10sec</a>
+			<h2>つくったひと</h2>
+			<a href="https://twitter.com/totoraj930">@totoraj930</a>
+			<p>バグとか問題があれば言ってくだされ。</p>
+
+		</div>
+		<div class="item-wrap"><a href="javascript:void(0)" class="about-close">閉じる</a></div>
+	</section>
+	<script>
+		$(".about-open").on("click", function() {
+			$(".about").fadeIn(200);
+		});
+		$(".about-close").on("click", function() {
+			$(".about").fadeOut(200);
+		});
+	</script>
+
+
+</body></html>
