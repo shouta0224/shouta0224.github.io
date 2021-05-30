@@ -21,6 +21,16 @@
       }
       -->
     </style>
+    <meta charset="utf-8">
+  <title>test</title>
+  <script>
+
+        function changeColor(idname){
+        var obj = document.getElementById(idname);
+        obj.style.color = '#ff0000';       
+        }
+
+  </script>
     <meta charset="UTF-8" />
     <title>あなたはロボットですか？</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -34,9 +44,9 @@
     <div class="header-footer">あなたは人間？</div>
     <form method="GET">
       <div class="g-recaptcha" data-callback= data-sitekey="6LcIcv4aAAAAAF_b-dUSpOjq86aTrSGuCPXO6LEj"></div>
-      <p><label>適当に書いてね</label></p>
+      <p id="target"><label>適当に書いてね</label></p>
       <p><input type="text" name="text-01"></p>
-      <p><input type="submit" value="押してね！"></p>
+      <p><input type="submit" value="押してね！" onclick="changeColor('target');" /></p>
     </form>
   </body>
 </html>

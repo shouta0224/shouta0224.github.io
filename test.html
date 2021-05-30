@@ -1,10 +1,23 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>test</title>
+  <script>
+
+        function changeColor(idname){
+        var obj = document.getElementById(idname);
+        obj.style.color = '#ff0000';       
+        }
+
+  </script>
+  <style>
+
+
+  </style>
+</head>
 <body>
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-  document.write("もじ");
-//-->
-</SCRIPT>
+  <p id="target">ここの色が変わります</p>
+  <input type="button" value=" ボタン " onclick="changeColor('target');" />
 </body>
 </html>
