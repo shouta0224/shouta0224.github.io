@@ -10,22 +10,22 @@
 </head>
 <body dada-lait-site="white">
     <a href="index.html"><img src="logo.png" alt="ロゴ"></a><a href="videos.html" style="color: gray;text-decoration: none;" rel="nofollow" class="btn btn-outline-secondary">Youtube動画集　</a><a href="links.html" style="color: gray;text-decoration: none;" rel="nofollow" class="btn btn-outline-secondary">リンク集</a>
-    <form action="confirm.php" method="post">
+    <form action="send.php" method="post">
         <p class="lead-form">フォーム!</p>
 
         <div class="item">
             <label class="label">ニックネーム：</label>
-            <input class="inputs" type="text" name="yourname" placeholder="しょうた">
+            <input class="inputs" type="text" name="yourname" value="<?php echo $_POST['yourname']; ?>" disabled>
         </div>
 
         <div class="item">
             <label class="label">コメント</label>
-            <textarea class="inputs" name="comment" placeholder="自由に書いてね"></textarea>
+            <textarea class="inputs" name="comment" value="<?php echo $_POST['comment']; ?>" disabled></textarea>
         </div>
 
         <div class="item">
             <p class="label">エディション</p>
-            <select class="inputs" name="edi">
+            <select class="inputs" name="edi" value="<?php echo $_POST['edi']; ?>" disabled>
             <option value="java">Java版</option>
             <option value="bedrock">統合版</option>
             <option value="ryoho">両方</option>
@@ -35,7 +35,7 @@
 
         <div class="btn-area">
             <input type="reset" value="リセット！">
-            <input type="submit" value="確認！">
+            <input type="submit" value="送信！">
         </div>
           
       </form>
