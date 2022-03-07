@@ -15,27 +15,22 @@
 
         <div class="item">
             <label class="label">ニックネーム：</label>
-            <input class="inputs" type="text" name="yourname" value="<?php echo $_POST['yourname']; ?>" disabled>
+            <input class="inputs" type="text" name="yourname" value="<?php echo $_GET['yourname']; ?>" disabled>
         </div>
 
         <div class="item">
             <label class="label">コメント</label>
-            <textarea class="inputs" name="comment" value="<?php echo $_POST['comment']; ?>" disabled></textarea>
+            <textarea class="inputs" name="comment" value="<?php echo $_GET['comment']; ?>" disabled></textarea>
         </div>
 
         <div class="item">
             <p class="label">エディション</p>
-            <select class="inputs" name="edi" value="<?php echo $_POST['edi']; ?>" disabled>
+            <select class="inputs" name="edi" value="<?php echo $_GET['edi']; ?>" disabled>
             <option value="java">Java版</option>
             <option value="bedrock">統合版</option>
             <option value="ryoho">両方</option>
             <option value="others">その他</option>
             </select>
-        </div>
-
-        <div class="btn-area">
-            <input type="reset" value="リセット！">
-            <input type="submit" value="送信！">
         </div>
           
       </form>
