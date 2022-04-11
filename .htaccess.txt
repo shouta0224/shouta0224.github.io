@@ -1,3 +1,7 @@
 ErrorDocument 401 /401.html
 ErrorDocument 404 /404.html
 ErrorDocument 405 /405.html
+
+RewirteEngine on
+Redirect permanent https://shouta0224.github.io/blog/index.html https://shouta0224.github.io/
+Redirect permanent https://shouta0224.github.io/blog/ https://shouta0224.github.io/
