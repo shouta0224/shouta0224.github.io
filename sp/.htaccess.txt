@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     "shouta0224"
+AuthUserFile .htpasswd.txt
+require valid-user
