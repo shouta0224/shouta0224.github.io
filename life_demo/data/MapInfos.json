@@ -35,6 +35,8 @@ null,
 {"id":33,"expanded":true,"name":"雪ラスボス","order":34,"parentId":30,"scrollX":982.8,"scrollY":548.4},
 {"id":34,"expanded":false,"name":"MAP034","order":33,"parentId":32,"scrollX":982.8,"scrollY":548.4},
 {"id":35,"expanded":false,"name":"Ending","order":36,"parentId":0,"scrollX":982.8,"scrollY":548.4},
-{"id":36,"expanded":false,"name":"MAP036","order":35,"parentId":33,"scrollX":982.8,"scrollY":548.4},
-{"id":37,"expanded":false,"name":"発電所","order":37,"parentId":0,"scrollX":982.8,"scrollY":548.4}
+{"id":36,"expanded":false,"name":"MAP036","order":35,"parentId":33,"scrollX":832,"scrollY":640},
+{"id":37,"expanded":true,"name":"発電所","order":37,"parentId":0,"scrollX":832,"scrollY":640},
+{"id":38,"expanded":true,"name":"パン屋前","order":38,"parentId":37,"scrollX":832,"scrollY":640},
+{"id":39,"expanded":false,"name":"パン屋","order":39,"parentId":38,"scrollX":832,"scrollY":640}
 ]
