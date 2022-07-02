@@ -3,5 +3,5 @@ null,
 {"id":1,"list":[{"code":126,"indent":0,"parameters":[4,0,0,1]},{"code":0,"indent":0,"parameters":[]}],"name":"eat_pan","switchId":1,"trigger":0},
 {"id":2,"list":[{"code":126,"indent":0,"parameters":[9,0,0,1]},{"code":0,"indent":0,"parameters":[]}],"name":"eat_hachimitsu_pan","switchId":1,"trigger":0},
 {"id":3,"list":[{"code":126,"indent":0,"parameters":[11,0,0,1]},{"code":0,"indent":0,"parameters":[]}],"name":"eat_kokyu_pan","switchId":1,"trigger":0},
-{"id":4,"list":[{"code":0,"indent":0,"parameters":[]}],"name":"","switchId":1,"trigger":0}
+{"id":4,"list":[{"code":122,"indent":0,"parameters":[14,14,0,3,7,0,0]},{"code":101,"indent":0,"parameters":["People2",4,0,2]},{"code":401,"indent":0,"parameters":["\\V[14]"]},{"code":0,"indent":0,"parameters":[]}],"name":"phone","switchId":1,"trigger":0}
 ]
