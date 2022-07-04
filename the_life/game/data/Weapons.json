@@ -8,6 +8,6 @@ null,
 {"id":6,"animationId":6,"description":"剣。攻撃力は高いが、重いので扱いが難しい。\n攻撃力+40。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":-0.1}],"iconIndex":99,"name":"斧","note":"","params":[0,0,40,0,0,0,-1,0],"price":200,"wtypeId":4},
 {"id":7,"animationId":3,"description":"フライパン。熱くて重くて硬い。\n防御にも使える。攻撃力+50。","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":110,"name":"フライパン","note":"攻撃50\n防御10","params":[0,0,50,10,0,0,0,0],"price":200,"wtypeId":2},
 {"id":8,"animationId":3,"description":"拳銃。強い。\n攻撃力+80。","etypeId":1,"traits":[{"code":31,"dataId":6,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":115,"name":"拳銃","note":"","params":[0,0,80,0,0,0,0,0],"price":300,"wtypeId":9},
-{"id":9,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0},
-{"id":10,"animationId":0,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0,"wtypeId":0}
+{"id":9,"animationId":25,"description":"王の剣。攻撃力+500。","etypeId":1,"traits":[{"code":31,"dataId":7,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":123,"name":"王の剣","note":"","params":[0,0,500,0,0,0,0,0],"price":999999,"wtypeId":2},
+{"id":10,"animationId":25,"description":"最強の剣。攻撃力+100。","etypeId":1,"traits":[{"code":31,"dataId":7,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":123,"name":"最強の剣","note":"","params":[0,0,100,0,0,0,0,0],"price":999999,"wtypeId":2}
 ]

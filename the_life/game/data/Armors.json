@@ -7,7 +7,9 @@ null,
 {"id":5,"atypeId":1,"description":"防寒具。寒さに耐えることができる。防御力+20。\n氷属性の攻撃に強い。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0},{"code":11,"dataId":3,"value":1.2},{"code":11,"dataId":2,"value":0.8},{"code":11,"dataId":4,"value":0.8},{"code":11,"dataId":1,"value":0.8}],"iconIndex":137,"name":"防寒具","note":"","params":[0,0,0,20,0,0,0,0],"price":200},
 {"id":6,"atypeId":1,"description":"特殊防具。いろいろな属性の攻撃に耐えられる。\n防御力+40。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"特殊防具","note":"","params":[0,0,0,40,0,0,0,0],"price":300},
 {"id":7,"atypeId":1,"description":"防護服。いろいろな属性の攻撃に耐えられる。\n防御力+50。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":136,"name":"防護服","note":"","params":[0,0,0,50,0,0,0,0],"price":400},
-{"id":8,"atypeId":1,"description":"最強の鎧。防御力+100。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"最強の鎧","note":"","params":[0,0,0,100,0,0,0,0],"price":999999},
-{"id":9,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":10,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
+{"id":8,"atypeId":1,"description":"最強の鎧。防御力+100。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"最強の鎧","note":"","params":[0,0,0,100,0,0,0,0],"price":1000},
+{"id":9,"atypeId":1,"description":"王の鎧。防御力+500。","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":137,"name":"王の鎧","note":"","params":[0,0,0,500,0,0,0,0],"price":999999},
+{"id":10,"atypeId":1,"description":"王の指輪。防御力+500。","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":134,"name":"王の指輪","note":"","params":[0,0,0,500,0,0,0,0],"price":999999},
+{"id":11,"atypeId":5,"description":"王の盾。防御力+500。","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":129,"name":"王の盾","note":"","params":[0,0,0,500,0,0,0,0],"price":999999},
+{"id":12,"atypeId":1,"description":"王冠。防御力+500。","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":131,"name":"王冠","note":"","params":[0,0,0,500,0,0,0,0],"price":999999}
 ]
