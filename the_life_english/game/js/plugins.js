@@ -4,5 +4,6 @@ var $plugins =
 [
 {"name":"Yami_8DIR","status":true,"description":"プレイヤーの8方向の移動が可能になります。","parameters":{}},
 {"name":"Community_Basic","status":true,"description":"基本的なパラメーターを設定するプラグインです。","parameters":{"cacheLimit":"20","screenWidth":"816","screenHeight":"624","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"auto","alwaysDash":"on"}},
-{"name":"YED_Eventspassable","status":true,"description":"イベントもしくはフォロワーが他のイベントにヒットした際に、途中で停止してしまうことを防ぎます。","parameters":{}}
+{"name":"YED_Eventspassable","status":true,"description":"イベントもしくはフォロワーが他のイベントにヒットした際に、途中で停止してしまうことを防ぎます。","parameters":{}},
+{"name":"111_InputForm","status":true,"description":"ゲーム画面上にHTMLの入力フォームを表示します","parameters":{"OK Button Text":"Done","Display Cancel Button":"1","Cancel Button Text":"Cancel","Judge Switch Interval":"100","Switch ID Selected OK":"0","Force OK Switch ID":"0","Force Cancel Switch ID":"0"}}
 ];
