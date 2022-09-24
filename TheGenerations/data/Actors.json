@@ -1,0 +1,6 @@
+[
+null,
+{"id":1,"battlerName":"Shuzinko","characterIndex":0,"characterName":"Shuzinko","classId":1,"equips":[1,0,2,3,0],"faceIndex":0,"faceName":"Shuzinko","traits":[],"initialLevel":1,"maxLevel":20,"name":"","nickname":"","note":"","profile":"ただの中学生"},
+{"id":2,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Actor1","classId":1,"equips":[1,0,2,3,0],"faceIndex":0,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"ハロルド","nickname":"","note":"","profile":"主人公の友達"},
+{"id":3,"battlerName":"Queen","characterIndex":0,"characterName":"Queen","classId":2,"equips":[3,1,0,3,4],"faceIndex":0,"faceName":"Queen","traits":[],"initialLevel":1,"maxLevel":99,"name":"女王","nickname":"","note":"","profile":"異世界の女王"}
+]
