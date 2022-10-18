@@ -2,7 +2,7 @@
 null,
 {"id":1,"expanded":false,"name":"Opening","order":1,"parentId":0,"scrollX":595.6363636363636,"scrollY":332.3636363636364},
 {"id":2,"expanded":true,"name":"Shuzinko's Room","order":2,"parentId":0,"scrollX":832,"scrollY":640},
-{"id":3,"expanded":false,"name":"House Roka","order":3,"parentId":2,"scrollX":595.6363636363636,"scrollY":332.3636363636364},
+{"id":3,"expanded":false,"name":"House Roka","order":3,"parentId":2,"scrollX":655.2,"scrollY":365.6},
 {"id":4,"expanded":true,"name":"House_1kai","order":4,"parentId":2,"scrollX":595.6363636363636,"scrollY":332.3636363636364},
 {"id":5,"expanded":false,"name":"BathRoom","order":5,"parentId":4,"scrollX":595.6363636363636,"scrollY":332.3636363636364},
 {"id":6,"expanded":false,"name":"Front of House","order":6,"parentId":0,"scrollX":595.6363636363636,"scrollY":326.54545454545456},
