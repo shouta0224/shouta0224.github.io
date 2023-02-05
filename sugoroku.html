@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <py-script>
+import random
+import datetime
+ALP = [
+"A","B","C","D","E","F","G",
+"H","I","J","K","L","M","N",
+"O","P","Q","R","S","T","U",
+"V","W","X","Y","Z"
+]
+r = random.choice(ALP)
+alp = ""
+for i in ALP:
+    if i != r:
+        alp = alp + i
+print(alp)
+st = datetime.datetime.now()
+ans = input("抜けているアルファベットは?")
+if ans == r:
+    print("正解です")
+    et = datetime.datetime.now()
+    print(str((et-st).seconds)+"秒掛かりました")
+else:
+    print("違います")
+
+    </py-script>
+</body>
+</html>
