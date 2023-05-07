@@ -1,0 +1,387 @@
+
+<!-- saved from url=(0536)https://www.youtube.com/subscribe_embed?usegapi=1&channelid=UCZLFu8bHbwtnIgWLg5UtINw&layout=default&theme=dark&count=default&origin=https%3A%2F%2Fwww.youtube.com&gsrc=3p&ic=1&jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.ja.623zV1o-ELY.O%2Fd%3D1%2Frs%3DAHpOoo-ClvQ_NmTDtCid9t3HU_PnpHQjeQ%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&id=I0_1683442444014&_gfid=I0_1683442444014&parent=https%3A%2F%2Fwww.youtube.com&pfname=&rpctoken=39043135 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>YouTube</title><link rel="stylesheet" href="./www-subscribe-embed_split_v0.css" name="www-subscribe-embed" nonce="E4Gkr4G0kTBD60U6tKD2Yw"><script src="./cb=gapi(2).loaded_0" nonce="YksugFYOlAQNNug_LeReZg" async=""></script><script>(function setConstant() {
+      const chain = "playerResponse.adPlacements";
+      let cValue = "undefined";
+      const thisScript = document.currentScript;
+      if (cValue === "undefined") {
+        cValue = undefined;
+      } else if (cValue === "false") {
+        cValue = false;
+      } else if (cValue === "true") {
+        cValue = true;
+      } else if (cValue === "null") {
+        cValue = null;
+      } else if (cValue === "''") {
+        cValue = "";
+      } else if (cValue === "[]") {
+        cValue = [];
+      } else if (cValue === "{}") {
+        cValue = {};
+      } else if (cValue === "noopFunc") {
+        cValue = function () {};
+      } else if (cValue === "trueFunc") {
+        cValue = function () {
+          return true;
+        };
+      } else if (cValue === "falseFunc") {
+        cValue = function () {
+          return false;
+        };
+      } else if (/^\d+$/.test(cValue)) {
+        cValue = parseFloat(cValue);
+        if (isNaN(cValue)) {
+          return;
+        }
+        if (Math.abs(cValue) > 0x7fff) {
+          return;
+        }
+      } else {
+        return;
+      }
+      let aborted = false;
+      const mustAbort = function (v) {
+        if (aborted) {
+          return true;
+        }
+        aborted =
+          v !== undefined &&
+          v !== null &&
+          cValue !== undefined &&
+          cValue !== null &&
+          typeof v !== typeof cValue;
+        return aborted;
+      };
+      // https://github.com/uBlockOrigin/uBlock-issues/issues/156
+      //   Support multiple trappers for the same property.
+      const trapProp = function (owner, prop, configurable, handler) {
+        if (handler.init(owner[prop]) === false) {
+          return;
+        }
+        const odesc = Object.getOwnPropertyDescriptor(owner, prop);
+        let prevGetter, prevSetter;
+        if (odesc instanceof Object) {
+          owner[prop] = cValue;
+          if (odesc.get instanceof Function) {
+            prevGetter = odesc.get;
+          }
+          if (odesc.set instanceof Function) {
+            prevSetter = odesc.set;
+          }
+        }
+        try {
+          Object.defineProperty(owner, prop, {
+            configurable,
+            get() {
+              if (prevGetter !== undefined) {
+                prevGetter();
+              }
+              return handler.getter(); // cValue
+            },
+            set(a) {
+              if (prevSetter !== undefined) {
+                prevSetter(a);
+              }
+              handler.setter(a);
+            },
+          });
+        } catch (ex) {
+          // Ignore
+        }
+      };
+      const trapChain = function (owner, chain) {
+        const pos = chain.indexOf(".");
+        if (pos === -1) {
+          trapProp(owner, chain, false, {
+            v: undefined,
+            init: function (v) {
+              if (mustAbort(v)) {
+                return false;
+              }
+              this.v = v;
+              return true;
+            },
+            getter: function () {
+              return document.currentScript === thisScript ? this.v : cValue;
+            },
+            setter: function (a) {
+              if (mustAbort(a) === false) {
+                return;
+              }
+              cValue = a;
+            },
+          });
+          return;
+        }
+        const prop = chain.slice(0, pos);
+        const v = owner[prop];
+        chain = chain.slice(pos + 1);
+        if (v instanceof Object || (typeof v === "object" && v !== null)) {
+          trapChain(v, chain);
+          return;
+        }
+        trapProp(owner, prop, true, {
+          v: undefined,
+          init: function (v) {
+            this.v = v;
+            return true;
+          },
+          getter: function () {
+            return this.v;
+          },
+          setter: function (a) {
+            this.v = a;
+            if (a instanceof Object) {
+              trapChain(a, chain);
+            }
+          },
+        });
+      };
+      trapChain(window, chain);
+    })();</script><script>(function setConstant() {
+      const chain = "ytInitialPlayerResponse.adPlacements";
+      let cValue = "undefined";
+      const thisScript = document.currentScript;
+      if (cValue === "undefined") {
+        cValue = undefined;
+      } else if (cValue === "false") {
+        cValue = false;
+      } else if (cValue === "true") {
+        cValue = true;
+      } else if (cValue === "null") {
+        cValue = null;
+      } else if (cValue === "''") {
+        cValue = "";
+      } else if (cValue === "[]") {
+        cValue = [];
+      } else if (cValue === "{}") {
+        cValue = {};
+      } else if (cValue === "noopFunc") {
+        cValue = function () {};
+      } else if (cValue === "trueFunc") {
+        cValue = function () {
+          return true;
+        };
+      } else if (cValue === "falseFunc") {
+        cValue = function () {
+          return false;
+        };
+      } else if (/^\d+$/.test(cValue)) {
+        cValue = parseFloat(cValue);
+        if (isNaN(cValue)) {
+          return;
+        }
+        if (Math.abs(cValue) > 0x7fff) {
+          return;
+        }
+      } else {
+        return;
+      }
+      let aborted = false;
+      const mustAbort = function (v) {
+        if (aborted) {
+          return true;
+        }
+        aborted =
+          v !== undefined &&
+          v !== null &&
+          cValue !== undefined &&
+          cValue !== null &&
+          typeof v !== typeof cValue;
+        return aborted;
+      };
+      // https://github.com/uBlockOrigin/uBlock-issues/issues/156
+      //   Support multiple trappers for the same property.
+      const trapProp = function (owner, prop, configurable, handler) {
+        if (handler.init(owner[prop]) === false) {
+          return;
+        }
+        const odesc = Object.getOwnPropertyDescriptor(owner, prop);
+        let prevGetter, prevSetter;
+        if (odesc instanceof Object) {
+          owner[prop] = cValue;
+          if (odesc.get instanceof Function) {
+            prevGetter = odesc.get;
+          }
+          if (odesc.set instanceof Function) {
+            prevSetter = odesc.set;
+          }
+        }
+        try {
+          Object.defineProperty(owner, prop, {
+            configurable,
+            get() {
+              if (prevGetter !== undefined) {
+                prevGetter();
+              }
+              return handler.getter(); // cValue
+            },
+            set(a) {
+              if (prevSetter !== undefined) {
+                prevSetter(a);
+              }
+              handler.setter(a);
+            },
+          });
+        } catch (ex) {
+          // Ignore
+        }
+      };
+      const trapChain = function (owner, chain) {
+        const pos = chain.indexOf(".");
+        if (pos === -1) {
+          trapProp(owner, chain, false, {
+            v: undefined,
+            init: function (v) {
+              if (mustAbort(v)) {
+                return false;
+              }
+              this.v = v;
+              return true;
+            },
+            getter: function () {
+              return document.currentScript === thisScript ? this.v : cValue;
+            },
+            setter: function (a) {
+              if (mustAbort(a) === false) {
+                return;
+              }
+              cValue = a;
+            },
+          });
+          return;
+        }
+        const prop = chain.slice(0, pos);
+        const v = owner[prop];
+        chain = chain.slice(pos + 1);
+        if (v instanceof Object || (typeof v === "object" && v !== null)) {
+          trapChain(v, chain);
+          return;
+        }
+        trapProp(owner, prop, true, {
+          v: undefined,
+          init: function (v) {
+            this.v = v;
+            return true;
+          },
+          getter: function () {
+            return this.v;
+          },
+          setter: function (a) {
+            this.v = a;
+            if (a instanceof Object) {
+              trapChain(a, chain);
+            }
+          },
+        });
+      };
+      trapChain(window, chain);
+    })();</script><script>(function jsonPrune() {
+      const rawPrunePaths = "[].playerResponse.adPlacements [].playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds";
+      const rawNeedlePaths = "{{2}}";
+      const prunePaths =
+        rawPrunePaths !== "{{1}}" && rawPrunePaths !== ""
+          ? rawPrunePaths.split(/ +/)
+          : [];
+      let needlePaths;
+      let log, reLogNeedle;
+      if (prunePaths.length !== 0) {
+        needlePaths =
+          prunePaths.length !== 0 &&
+          rawNeedlePaths !== "{{2}}" &&
+          rawNeedlePaths !== ""
+            ? rawNeedlePaths.split(/ +/)
+            : [];
+      } else {
+        log = console.log.bind(console);
+        let needle;
+        if (rawNeedlePaths === "" || rawNeedlePaths === "{{2}}") {
+          needle = ".?";
+        } else if (
+          rawNeedlePaths.charAt(0) === "/" &&
+          rawNeedlePaths.slice(-1) === "/"
+        ) {
+          needle = rawNeedlePaths.slice(1, -1);
+        } else {
+          needle = rawNeedlePaths.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        }
+        reLogNeedle = new RegExp(needle);
+      }
+      const findOwner = function (root, path, prune = false) {
+        let owner = root;
+        let chain = path;
+        for (;;) {
+          if (typeof owner !== "object" || owner === null) {
+            return false;
+          }
+          const pos = chain.indexOf(".");
+          if (pos === -1) {
+            if (prune === false) {
+              return owner.hasOwnProperty(chain);
+            }
+            if (chain === "*") {
+              for (const key in owner) {
+                if (owner.hasOwnProperty(key) === false) {
+                  continue;
+                }
+                delete owner[key];
+              }
+            } else if (owner.hasOwnProperty(chain)) {
+              delete owner[chain];
+            }
+            return true;
+          }
+          const prop = chain.slice(0, pos);
+          if (
+            (prop === "[]" && Array.isArray(owner)) ||
+            (prop === "*" && owner instanceof Object)
+          ) {
+            const next = chain.slice(pos + 1);
+            let found = false;
+            for (const key of Object.keys(owner)) {
+              found = findOwner(owner[key], next, prune) || found;
+            }
+            return found;
+          }
+          if (owner.hasOwnProperty(prop) === false) {
+            return false;
+          }
+          owner = owner[prop];
+          chain = chain.slice(pos + 1);
+        }
+      };
+      const mustProcess = function (root) {
+        for (const needlePath of needlePaths) {
+          if (findOwner(root, needlePath) === false) {
+            return false;
+          }
+        }
+        return true;
+      };
+      const pruner = function (o) {
+        if (log !== undefined) {
+          const json = JSON.stringify(o, null, 2);
+          if (reLogNeedle.test(json)) {
+            log("uBO:", location.hostname, json);
+          }
+          return o;
+        }
+        if (mustProcess(o) === false) {
+          return o;
+        }
+        for (const path of prunePaths) {
+          findOwner(o, path, true);
+        }
+        return o;
+      };
+      JSON.parse = new Proxy(JSON.parse, {
+        apply: function () {
+          return pruner(Reflect.apply(...arguments));
+        },
+      });
+      Response.prototype.json = new Proxy(Response.prototype.json, {
+        apply: function () {
+          return Reflect.apply(...arguments).then((o) => pruner(o));
+        },
+      });
+    })();</script></head><body id="" class="date-20230506 ja_JP ltr  dark  site-center-aligned site-as-giant-card  webkit webkit-537" dir="ltr" marginwidth="0" marginheight="0"><div id="yt-subscribe"><span class=" yt-uix-button-subscription-container"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-subscribe-branded yt-uix-button-has-icon no-icon-markup yt-uix-subscription-button yt-can-buffer external fixed-width" type="button" onclick=";return false;" aria-busy="false" aria-live="polite" data-channel-external-id="UCZLFu8bHbwtnIgWLg5UtINw" data-href="http://www.youtube.com/channel/UCZLFu8bHbwtnIgWLg5UtINw?sub_confirmation=1&amp;feature=subscribe-embed-click" data-insecure="True" data-params="" data-style-type="branded" data-target="_top" data-parent-url="https://www.youtube.com/"><span class="yt-uix-button-content"><span class="subscribe-label" aria-label="YouTube">YouTube</span><span class="subscribed-label" aria-label="YouTube">YouTube</span><span class="unsubscribe-label" aria-label="YouTube">YouTube</span></span></button><span class="yt-subscription-button-subscriber-count-branded-horizontal" role="button" tabindex="0">1M</span><br><span class="yt-subscription-button-disabled-mask" title=""></span></span></div><script src="./www-subscribe-embed_v0.js.ダウンロード" name="www-subscribe-embed/www-subscribe-embed" nonce="YksugFYOlAQNNug_LeReZg"></script><script nonce="YksugFYOlAQNNug_LeReZg">yt.setConfig({'LOGGED_IN': true , 'SUBSCRIBE_EMBED_DISCOVERABLE_SUBSCRIPTIONS': false}); yt.setConfig({'SUBSCRIBE_EMBED_HOVERCARD_URL': "https:\/\/www.youtube.com\/subscribe_embed?action_card\x3d1\x26channelid\x3dUCZLFu8bHbwtnIgWLg5UtINw\x26usegapi\x3d1"}); ytbin.www.subscribeembed.init();</script></body></html>
