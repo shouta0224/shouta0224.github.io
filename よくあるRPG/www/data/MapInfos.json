@@ -1,0 +1,6 @@
+[
+null,
+{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":819,"scrollY":457},
+{"id":2,"expanded":true,"name":"最初の町","order":2,"parentId":0,"scrollX":926,"scrollY":624},
+{"id":3,"expanded":false,"name":"主人公の家","order":3,"parentId":2,"scrollX":832,"scrollY":640}
+]
