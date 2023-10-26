@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header {
+    background: #333;
+    padding: .5rem;
+    text-align: right;
+    }
+    a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    }
+    li {
+    margin: 2rem 0;
+    }
+    
+    .btn-menu {
+    border: 1px solid #999;
+    background: transparent;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    }
+    
+    nav {
+    background: #0bd;
+    position: absolute;
+    z-index: 1;
+    top: 5.125rem;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    width: 0; 
+    transition: .5s;
+    }
+
+    nav.open-menu {
+    width: 100%;
+    }
+    </style>
+</head>
+<body style="background-color:#ccc;">
+    <div class="container">
+        <header>
+            <h2 style="text-align: left; color: #fff;">回覧板(テスト)<button class="btn-menu" style="text-align: right;">メニュー</button></h2>
+            <nav>
+                <h2>
+                <ul>
+                    <li><a href="kashiwashi.html">柏市</a></li>
+                    <li><a href="asahimachi.html">旭町</a></li>
+                    <li><a href="asahimachi_3chome.html">旭町三丁目</a></li>
+                </ul>
+                </h2>
+            </nav>
+        </header>
+        <script>
+            const btn = document.querySelector('.btn-menu');
+            const nav = document.querySelector('nav');
+            
+            btn.addEventListener('click', () => {
+            nav.classList.toggle('open-menu')
+            if (btn.innerHTML === 'メニュー') {
+                btn.innerHTML = '閉じる';
+            } else {
+                btn.innerHTML = 'メニュー';
+            }
+            });
+        </script>
+        <h1>柏市掲示板</h1>
+        <input type="text" id="inputField" placeholder="文字列を入力してください" style="height: 3em; width: 10em;">
+        <button onclick="sendMessage()" style="width: 4em; height: 3em;">送信</button>
+        <div id="messageContainer"></div>
+        <script>
+            function sendMessage() {
+                const inputField = document.getElementById("inputField");
+                const messageContainer = document.getElementById("messageContainer");
+    
+                const message = inputField.value;
+    
+                if (message.trim() !== "") {
+                    if (messageContainer.innerHTML !== "") {
+                        messageContainer.innerHTML += "<hr>";
+                    }
+                    messageContainer.innerHTML += "<strong>東葛太郎</strong>" + "<br>" + message;
+                    inputField.value = "";
+                }
+            }
+        </script>
+</body>
+</html>

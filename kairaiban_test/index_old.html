@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    }
+
+    .main-contents {
+    width: 80%;
+    padding: 10px;
+    }
+
+    .left-menu {
+    width: 30%;
+    padding: 10px;
+    background-color: #faa; 
+    }
+
+    header {
+    background: #333;
+    padding: .5rem;
+    text-align: right;
+    }
+    a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    }
+    li {
+    margin: 2rem 0;
+    }
+    
+    /* ボタン */
+    .btn-menu {
+    border: 1px solid #999;
+    background: transparent;
+    color: #fff;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+    }
+    
+    /* メニュー */
+    nav {
+    background: #0bd;
+    position: absolute;
+    z-index: 1;
+    top: 3.125rem;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    width: 100%;
+    }
+    </style>
+</head>
+<body style="background-color:#ccc;">
+    <div class="container">
+        <div class="left-menu">
+        <a href="index.html">回覧板(test)</a>
+        <button style="height: 4em; width: 7em;"><strong>旭町三丁目</strong></button>
+        <button><strong>旭町</strong></button>
+        <button><strong>柏市</strong></button>
+        </div>
+        <div class="main-contents">
+            <input type="text" id="inputField" placeholder="文字列を入力してください" style="height: 3em; width: 10em;">
+            <button onclick="sendMessage()" style="width: 4em; height: 3em;">送信</button>
+            <div id="messageContainer"></div>
+            <script>
+                function sendMessage() {
+                    const inputField = document.getElementById("inputField");
+                    const messageContainer = document.getElementById("messageContainer");
+        
+                    const message = inputField.value;
+        
+                    if (message.trim() !== "") {
+                        if (messageContainer.innerHTML !== "") {
+                            messageContainer.innerHTML += "<hr>";
+                        }
+                        messageContainer.innerHTML += "<strong>東葛太郎</strong>" + "<br>" + message;
+                        inputField.value = "";
+                    }
+                }
+            </script>
+        </body>
+        </html>
+        </div>
+      </div>
+</body>
+</html>
