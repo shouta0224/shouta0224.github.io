@@ -1,0 +1,40 @@
+header {
+background: #333;
+padding: .5rem;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+white-space: nowrap;
+}
+
+li {
+margin: 2rem 0;
+}
+
+.btn-menu {
+border: 1px solid #999;
+background: transparent;
+color: #fff;
+padding: .5rem 1rem;
+font-size: 1rem;
+cursor: pointer;
+line-height: 1;
+}
+
+nav {
+background: #0bd;
+position: absolute;
+z-index: 1;
+top: 5.125rem;
+right: 0;
+overflow-x: hidden;
+text-align: center;
+width: 0; 
+transition: .5s;
+}
+
+nav.open-menu {
+width: 100%;
+}

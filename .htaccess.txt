@@ -5,9 +5,3 @@ ErrorDocument 405 /405.html
 RewirteEngine on
 Redirect permanent https://shouta0224.github.io/blog/index.html https://shouta0224.github.io/
 Redirect permanent https://shouta0224.github.io/blog/ https://shouta0224.github.io/
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_USER_AGENT} (iPhone|Android.*Mobile|Windows.*Phone) [NC]
-RewriteRule ^(.*)$ http://sp.example.com/$1 [R,L]
-</IfModule>
