@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style>
-      button, input[type="submit"] {
+button, input[type="submit"] {
     outline: none;
 }
 
@@ -139,21 +132,3 @@ label {
         top: 30px;
     }
 }
-</style>
-</head>
-<body>
-    <form action="https://script.google.com/macros/s/AKfycby7ZClDK8f9VWWBZXRYU3UAiuh-Do3ldoc0_s8tq1fo7VvbE3IbwM05008jw6loaYIJLw/exec" method="POST">
-        <p>
-            <label>Name</label>
-            <input name="name" type="text">
-        </p>
-        <p>
-            <label>Something</label>
-            <input name="something" type="text">
-        </p>
-        <p>
-            <input value="Send" type="submit">
-        </p>
-    </form>
-</body>
-</html>
